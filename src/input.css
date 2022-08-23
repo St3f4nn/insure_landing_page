@@ -23,4 +23,27 @@
   .container {
     @apply px-6;
   }
+
+  /* Header */
+
+  .header-nav-link {
+    @apply inline-block text-xl font-bold tracking-widest transition-all lg:text-sm text-neutral-verylightgray lg:text-neutral-darkgrayishviolet lg:hover:text-neutral-verydarkviolet;
+  }
+
+  .header-nav-btn-hamburger,
+  .header-nav-btn-close {
+    @apply w-8 cursor-pointer;
+  }
+
+  .header.open .header-nav {
+    @apply flex min-h-screen lg:min-h-max;
+  }
+
+  .header.open .header-nav-btn-hamburger {
+    @apply hidden;
+  }
+
+  .header.open .header-nav-btn-close {
+    @apply block;
+  }
 }

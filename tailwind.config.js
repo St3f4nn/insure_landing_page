@@ -28,6 +28,19 @@ module.exports = {
         dm: "'DM Serif Display', serif",
         karla: "'Karla', sans-serif",
       },
+      spacing: {
+        1.75: "7px",
+        2.25: "9px",
+        4.75: "19px",
+        5.25: "21px",
+        6.25: "25px",
+        6.5: "26px",
+        6.75: "27px",
+        8.25: "33px",
+      },
+      height: {
+        54.5: "218px",
+      },
     },
   },
   plugins: [

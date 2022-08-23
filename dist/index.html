@@ -34,27 +34,59 @@
   </head>
   <body class="debug-screens font-karla">
     <!-- Header -->
-    <header>
-      <div class="container">
-        <div>
+    <header class="header py-6 lg:pt-5.25 lg:pb-4.75 relative">
+      <div class="container flex items-center justify-between">
+        <!-- Logo -->
+        <div class="w-28">
           <img src="./assets/images/02_header/logo.svg" alt="Insure logo" />
         </div>
+        <!-- Navigation menu -->
         <nav>
-          <ul>
-            <li>
-              <a href="#">HOW WE WORK</a>
+          <ul
+            class="absolute left-0 right-0 flex-col items-center hidden px-6 pt-12 pb-20 overflow-y-hidden text-center transition-all lg:flex header-nav lg:flex-row lg:relative top-full lg:inset-auto lg:bg-transparent bg-neutral-verydarkviolet lg:p-0 lg:min-h-max"
+          >
+            <li class="lg:mr-6.5 mb-10 lg:mb-0 relative z-10">
+              <a href="#" class="header-nav-link">HOW WE WORK</a>
             </li>
-            <li>
-              <a href="#">BLOG</a>
+            <li class="lg:mr-6.5 mb-10 lg:mb-0 relative z-10">
+              <a href="#" class="header-nav-link">BLOG</a>
             </li>
-            <li>
-              <a href="#">ACCOUNT</a>
+            <li class="lg:mr-8.25 mb-8 lg:mb-0 relative z-10">
+              <a href="#" class="header-nav-link">ACCOUNT</a>
             </li>
-            <li>
-              <a href="#">VIEW PLANS</a>
+            <li class="relative z-10 w-full text-center lg:w-max">
+              <a href="#">
+                <button
+                  class="w-full sm:w-max sm:inline-block font-bold text-xl lg:text-sm tracking-widest text-neutral-verylightgray hover:text-neutral-verydarkviolet lg:text-neutral-verydarkviolet lg:hover:text-neutral-verylightgray hover:bg-neutral-verylightgray lg:hover:bg-neutral-verydarkviolet transition-all border-2 border-solid lg:border-neutral-verydarkviolet lg:pt-2.25 lg:pb-1.75 py-3.5 lg:pl-6.25 lg:pr-6.75 px-6"
+                >
+                  VIEW PLANS
+                </button>
+              </a>
             </li>
+            <div class="absolute bottom-0 left-0 right-0 z-0 lg:hidden h-54.5">
+              <img
+                src="./assets/images/02_header/bg-pattern-mobile-nav.svg"
+                alt="Background navigation pattern"
+                class="object-cover object-top h-full"
+              />
+            </div>
           </ul>
         </nav>
+        <!-- Hamburger icon and close button icon -->
+        <div class="header-nav-btn lg:hidden">
+          <div class="header-nav-btn-hamburger">
+            <img
+              src="./assets/images/02_header/icon-hamburger.svg"
+              alt="Hamburger icon"
+            />
+          </div>
+          <div class="hidden header-nav-btn-close">
+            <img
+              src="./assets/images/02_header/icon-close.svg"
+              alt="Close button icon"
+            />
+          </div>
+        </div>
       </div>
     </header>
     <script src="./js/script.js"></script>
