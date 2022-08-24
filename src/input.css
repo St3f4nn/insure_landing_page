@@ -25,7 +25,7 @@
   }
 
   .cta {
-    @apply inline-block text-xl font-bold tracking-widest transition-all border-2 border-solid lg:text-sm;
+    @apply inline-block font-bold tracking-widest transition-all border-2 border-solid;
   }
 
   /* Header */

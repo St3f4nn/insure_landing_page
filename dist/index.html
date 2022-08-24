@@ -43,7 +43,7 @@
         <!-- Header navigation menu -->
         <nav>
           <ul
-            class="absolute left-0 right-0 flex-col items-center hidden px-6 pt-12 pb-20 overflow-y-hidden text-center transition-all lg:flex header-nav lg:flex-row lg:relative top-full lg:inset-auto lg:bg-transparent bg-neutral-verydarkviolet lg:p-0 lg:min-h-max"
+            class="absolute left-0 right-0 z-50 flex-col items-center hidden px-6 pt-12 pb-20 overflow-y-hidden text-center transition-all lg:flex header-nav lg:flex-row lg:relative top-full lg:inset-auto lg:bg-transparent bg-neutral-verydarkviolet lg:p-0 lg:min-h-max"
           >
             <li class="lg:mr-6.5 mb-10 lg:mb-0 relative z-10">
               <a href="#" class="header-nav-link">HOW WE WORK</a>
@@ -57,7 +57,7 @@
             <li class="relative z-10 w-full text-center lg:w-max">
               <a href="#">
                 <button
-                  class="cta w-full sm:w-max text-neutral-verylightgray hover:text-neutral-verydarkviolet lg:text-neutral-verydarkviolet lg:hover:text-neutral-verylightgray hover:bg-neutral-verylightgray lg:hover:bg-neutral-verydarkviolet lg:border-neutral-verydarkviolet lg:pt-2.25 lg:pb-1.75 py-3.5 lg:pl-6.25 lg:pr-6.75 px-6"
+                  class="cta text-xl lg:text-sm w-full sm:w-max text-neutral-verylightgray hover:text-neutral-verydarkviolet lg:text-neutral-verydarkviolet lg:hover:text-neutral-verylightgray hover:bg-neutral-verylightgray lg:hover:bg-neutral-verydarkviolet lg:border-neutral-verydarkviolet lg:pt-2.25 lg:pb-1.75 py-3.5 lg:pl-6.25 lg:pr-6.75 px-6"
                 >
                   VIEW PLANS
                 </button>
@@ -91,55 +91,70 @@
     </header>
     <main>
       <!-- Hero -->
-      <section>
+      <section class="relative bg-primary-darkviolet">
         <!-- Hero pattern left -->
-        <div>
+        <div
+          class="hidden md:block w-48.75 h-126 absolute md:bottom-0 lg:-bottom-83.5 left-0 opacity-20 lg:opacity-100"
+        >
           <img
             src="./assets/images/03_hero/bg-pattern-intro-left-desktop.svg"
             alt="Hero background pattern on the left"
+            class="object-cover h-full"
           />
         </div>
         <!-- Hero pattern right -->
-        <div>
+        <div
+          class="hidden md:block w-109 h-148.25 absolute right-0 top-0 lg:z-40 opacity-20 lg:opacity-100"
+        >
           <img
             src="./assets/images/03_hero/bg-pattern-intro-right-desktop.svg"
             alt="Hero background pattern on the right"
+            class="object-cover h-full"
           />
         </div>
-        <div></div>
-        <div class="container">
+        <div
+          class="container relative z-20 px-0 md:px-6 grid grid-cols-1 md:grid-cols-2 md:gap-7.75 md:py-18 lg:py-0"
+        >
           <!-- Hero text box -->
-          <div>
+          <div
+            class="lg:py-26.25 text-center md:text-left row-start-2 md:row-start-1 py-23.25 md:py-0 relative"
+          >
             <!-- Hero text box pattern top -->
-            <div>
+            <div class="absolute top-0 left-0 md:hidden w-42 h-41.25">
               <img
                 src="./assets/images/03_hero/bg-pattern-intro-left-mobile.svg"
                 alt="Hero text box background pattern on the top"
+                class="object-cover h-full"
               />
             </div>
             <!-- Hero text box pattern bottom -->
-            <div>
+            <div class="md:hidden absolute right-0 -bottom-44 w-31 h-82.5">
               <img
                 src="./assets/images/03_hero/bg-pattern-intro-right-mobile.svg"
                 alt="Hero text box background pattern on the bottom"
+                class="object-cover h-full"
               />
             </div>
-            <h1>Humanizing your insurance.</h1>
-            <p>
+            <h1
+              class="relative text-5xl lg:text-7xl lg:leading-0.9 text-neutral-verylightgray md:pt-10 lg:pt-15 pl-6.5 pr-3.75 md:px-0 md:before:content-[''] md:before:block md:before:w-37.5 md:before:h-0.25 md:before:bg-neutral-verylightgray md:before:absolute md:before:top-0 md:before:left-0"
+            >
+              Humanizing your insurance.
+            </h1>
+            <p class="mt-6 text-neutral-verylightgray pl-7.5 pr-6.5 md:px-0">
               Get your life insurance coverage easier and faster. We blend our
               expertise and technology to help you find the plan that's right
               for you. Ensure you and your loved ones are protected.
             </p>
-            <a href="#">
+            <a href="#" class="inline-block mt-8">
               <button
-                class="cta text-neutral-verylightgray hover:text-neutral-verydarkviolet hover:bg-neutral-verylightgray pt-2.25 pb-1.75 pl-6.25 pr-6.75"
+                class="cta text-xl md:text-sm text-neutral-verylightgray hover:text-neutral-verydarkviolet hover:bg-neutral-verylightgray pt-2.25 pb-1.75 pl-6.25 pr-6.75"
               >
                 VIEW PLANS
               </button>
             </a>
           </div>
           <!-- Hero image box -->
-          <div>
+          <div class="lg:translate-y-26.25 row-start-1 md:row-start-1">
             <img
               src="./assets/images/03_hero/image-intro.jpg"
               alt="Picture of family dancing"
