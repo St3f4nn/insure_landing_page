@@ -11,7 +11,7 @@
   h4,
   h5,
   h6 {
-    @apply font-dm;
+    @apply font-normal font-dm;
   }
 
   img {
@@ -22,6 +22,10 @@
 
   .container {
     @apply px-6;
+  }
+
+  .cta {
+    @apply inline-block text-xl font-bold tracking-widest transition-all border-2 border-solid lg:text-sm;
   }
 
   /* Header */

@@ -419,6 +419,7 @@ h1,
   h5, 
   h6 {
   font-family: 'DM Serif Display', serif;
+  font-weight: 400;
 }
 
 img {
@@ -430,6 +431,26 @@ img {
 .container {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.cta {
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+@media (min-width: 1024px) {
+  .cta {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 /* Header */
@@ -784,10 +805,6 @@ img {
   margin-bottom: 2rem;
 }
 
-.block {
-  display: block;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -832,17 +849,14 @@ img {
   overflow-y: hidden;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
-.border-solid {
-  border-style: solid;
-}
-
 .bg-neutral-verydarkviolet {
   --tw-bg-opacity: 1;
   background-color: hsl(270 9% 17% / var(--tw-bg-opacity));
+}
+
+.bg-primary-darkviolet {
+  --tw-bg-opacity: 1;
+  background-color: hsl(256 26% 20% / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -883,25 +897,44 @@ img {
   padding-bottom: 5rem;
 }
 
+.pt-2\.25 {
+  padding-top: 9px;
+}
+
+.pb-1\.75 {
+  padding-bottom: 7px;
+}
+
+.pl-6\.25 {
+  padding-left: 25px;
+}
+
+.pr-6\.75 {
+  padding-right: 27px;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .font-karla {
   font-family: 'Karla', sans-serif;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.tracking-widest {
-  letter-spacing: 0.1em;
 }
 
 .text-neutral-verylightgray {
@@ -926,10 +959,6 @@ img {
 }
 
 @media (min-width: 640px) {
-  .sm\:inline-block {
-    display: inline-block;
-  }
-
   .sm\:w-max {
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -1054,16 +1083,6 @@ img {
     padding-right: 1.5rem;
   }
 
-  .lg\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
-  .lg\:text-neutral-darkgrayishviolet {
-    --tw-text-opacity: 1;
-    color: hsl(273 4% 51% / var(--tw-text-opacity));
-  }
-
   .lg\:text-neutral-verydarkviolet {
     --tw-text-opacity: 1;
     color: hsl(270 9% 17% / var(--tw-text-opacity));
@@ -1072,11 +1091,6 @@ img {
   .lg\:hover\:bg-neutral-verydarkviolet:hover {
     --tw-bg-opacity: 1;
     background-color: hsl(270 9% 17% / var(--tw-bg-opacity));
-  }
-
-  .lg\:hover\:text-neutral-verydarkviolet:hover {
-    --tw-text-opacity: 1;
-    color: hsl(270 9% 17% / var(--tw-text-opacity));
   }
 
   .lg\:hover\:text-neutral-verylightgray:hover {
