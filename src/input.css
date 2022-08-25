@@ -40,7 +40,7 @@
   }
 
   .header.open .header-nav {
-    @apply flex min-h-screen lg:min-h-max;
+    @apply pt-12 pb-74.75 h-max lg:p-0;
   }
 
   .header.open .header-nav-btn-hamburger {
