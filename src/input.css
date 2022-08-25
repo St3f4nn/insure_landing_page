@@ -24,6 +24,10 @@
     @apply px-6;
   }
 
+  .section-heading {
+    @apply relative text-5xl lg:text-7xl lg:leading-0.9;
+  }
+
   .cta {
     @apply inline-block font-bold tracking-widest transition-all border-2 border-solid;
   }
@@ -49,5 +53,23 @@
 
   .header.open .header-nav-btn-close {
     @apply block;
+  }
+
+  /* Features */
+
+  .features-item {
+    @apply flex flex-col items-center md:items-start;
+  }
+
+  .features-item-img {
+    @apply w-21.5 h-21.5 rounded-full overflow-hidden;
+  }
+
+  .features-heading {
+    @apply text-3xl md:text-2xl lg:text-3xl text-neutral-verydarkviolet mt-8.75;
+  }
+
+  .features-paragraph {
+    @apply mt-4.5 text-neutral-darkgrayishviolet text-center md:text-left px-0.5 md:px-0;
   }
 }
