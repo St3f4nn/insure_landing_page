@@ -72,4 +72,23 @@
   .features-paragraph {
     @apply mt-4.5 text-neutral-darkgrayishviolet text-center md:text-left px-0.5 md:px-0;
   }
+
+  /* Footer */
+
+  .footer-grid-item-heading,
+  .footer-grid-item-link {
+    @apply text-sm font-bold tracking-widest;
+  }
+
+  .footer-grid-item-heading {
+    @apply block text-center text-neutral-darkgrayishviolet md:text-left;
+  }
+
+  .footer-grid-item-menu {
+    @apply flex flex-col gap-1.75 items-center md:items-start;
+  }
+
+  .footer-grid-item-link {
+    @apply text-primary-darkviolet hover:underline;
+  }
 }
