@@ -149,7 +149,7 @@
             </p>
             <a href="#" class="inline-block mt-8.25 md:mt-7.75">
               <button
-                class="cta text-xl md:text-sm text-neutral-verylightgray hover:text-neutral-verydarkviolet hover:bg-neutral-verylightgray pt-2.25 pb-1.75 pl-6.25 pr-6.75"
+                class="cta text-sm text-neutral-verylightgray hover:text-neutral-verydarkviolet hover:bg-neutral-verylightgray pt-2.25 pb-1.75 pl-6.25 pr-6.75"
               >
                 VIEW PLANS
               </button>
@@ -223,17 +223,43 @@
         </div>
       </section>
       <!-- CTA -->
-      <section>
+      <section class="mt-35.25 md:mt-39.75">
         <div class="container">
-          <h2>Find out more about how we work</h2>
-          <div>
-            <a href="#" class="inline-block">
-              <button
-                class="cta text-xl md:text-sm text-neutral-verylightgray hover:text-neutral-verydarkviolet hover:bg-neutral-verylightgray pt-2.25 pb-1.75 pl-6.25 pr-6.75"
-              >
-                HOW WE WORK
-              </button>
-            </a>
+          <div
+            class="px-11 md:px-20 bg-primary-darkviolet pt-17.5 pb-18 lg:pt-17.25 lg:pb-17 flex flex-col md:flex-row items-center justify-between gap-9.5 relative overflow-y-hidden"
+          >
+            <!-- CTA pattern desktop -->
+            <div
+              class="absolute top-0 right-0 hidden md:block w-108.5 h-full z-0"
+            >
+              <img
+                src="./assets/images/05_cta/bg-pattern-how-we-work-desktop.svg"
+                alt="CTA background pattern desktop"
+                class="h-full"
+              />
+            </div>
+            <!-- CTA pattern mobile -->
+            <div class="absolute top-0 right-0 z-0 md:hidden w-44 h-79.25">
+              <img
+                src="./assets/images/05_cta/bg-pattern-how-we-work-mobile.svg"
+                alt="CTA background pattern mobile"
+                class="object-cover h-full"
+              />
+            </div>
+            <h2
+              class="md:w-3/5 lg:w-8/12 xl:w-54.90 text-4xl text-center lg:text-6xl text-neutral-verylightgray md:text-left relative z-10"
+            >
+              Find out more about how we work
+            </h2>
+            <div class="relative z-10">
+              <a href="#" class="inline-block">
+                <button
+                  class="cta text-sm text-neutral-verylightgray hover:text-neutral-verydarkviolet hover:bg-neutral-verylightgray pt-2.25 pb-1.75 px-5.5"
+                >
+                  HOW WE WORK
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
